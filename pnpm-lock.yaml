@@ -39,6 +39,7 @@ importers:
       '@uppy/status-bar': ^3.0.1
       '@uppy/vue': ^1.0.1
       '@uppy/xhr-upload': ^3.0.4
+      '@vitejs/plugin-basic-ssl': ^1.0.1
       '@vitejs/plugin-vue': ^3.2.0
       '@vitejs/plugin-vue-jsx': ^2.1.1
       '@vitest/ui': ^0.25.3
@@ -160,6 +161,7 @@ importers:
       '@types/node': 18.11.9
       '@types/qs': 6.9.7
       '@types/randomstring': 1.1.8
+      '@vitejs/plugin-basic-ssl': 1.0.1_vite@3.2.4
       '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
       '@vitejs/plugin-vue-jsx': 2.1.1_vite@3.2.4+vue@3.2.45
       '@vitest/ui': 0.25.3
@@ -3562,6 +3564,15 @@ packages:
       '@uppy/utils': 5.0.2
       nanoid: 4.0.0
     dev: false
+
+  /@vitejs/plugin-basic-ssl/1.0.1_vite@3.2.4:
+    resolution: {integrity: sha512-pcub+YbFtFhaGRTo1832FQHQSHvMrlb43974e2eS8EKleR3p1cDdkJFPci1UhwkEf1J9Bz+wKBSzqpKp7nNj2A==}
+    engines: {node: '>=14.6.0'}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 3.2.4_ajklay5k626t46b6fyghkbup3i
+    dev: true
 
   /@vitejs/plugin-vue-jsx/2.1.1_vite@3.2.4+vue@3.2.45:
     resolution: {integrity: sha512-JgDhxstQlwnHBvZ1BSnU5mbmyQ14/t5JhREc6YH5kWyu2QdAAOsLF6xgHoIWarj8tddaiwFrNzLbWJPudpXKYA==}

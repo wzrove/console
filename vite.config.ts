@@ -7,6 +7,7 @@ import Compression from "vite-compression-plugin";
 import { VitePWA } from "vite-plugin-pwa";
 import Icons from "unplugin-icons/vite";
 import { setupLibraryExternal } from "./src/build/library-external";
+import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export const sharedPlugins = [
   Vue(),
@@ -29,6 +30,7 @@ export const sharedPlugins = [
     },
     disable: true,
   }),
+  basicSsl(),
 ];
 
 export default ({ mode }: { mode: string }) => {
@@ -47,7 +49,13 @@ export default ({ mode }: { mode: string }) => {
       },
     },
     server: {
-      port: 3000,
+      https: true,
+      proxy: {
+        "^/(apis|api|login)": {
+          target: "https://demo.halo.run",
+          changeOrigin: true,
+        },
+      },
     },
     build: {
       chunkSizeWarningLimit: 2048,

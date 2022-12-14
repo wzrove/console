@@ -22,8 +22,8 @@ const userStore = useUserStore();
 
 const loginForm = ref<LoginForm>({
   _csrf: "",
-  username: "",
-  password: "",
+  username: "demo",
+  password: "P@ssw0rd123..",
 });
 
 const loading = ref(false);

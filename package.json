@@ -94,6 +94,7 @@
     "@types/node": "^18.11.9",
     "@types/qs": "^6.9.7",
     "@types/randomstring": "^1.1.8",
+    "@vitejs/plugin-basic-ssl": "^1.0.1",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
     "@vitest/ui": "^0.25.3",
